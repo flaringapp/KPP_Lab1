@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ConsoleInteractorImpl implements ConsoleInteractor {
 
-    Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
 
     private static final String options = "\n" +
             "1. Sort by name\n" +

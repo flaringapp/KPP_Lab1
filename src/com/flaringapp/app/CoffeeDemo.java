@@ -12,10 +12,10 @@ import java.util.function.Function;
 
 public final class CoffeeDemo implements ConsoleInputConsumer {
 
-    ConsoleInteractor interactor = InstanceResolver.getConsoleInteractor();
-    ConsoleInputResolver inputResolver = InstanceResolver.getConsoleInputResolver(this);
+    private final ConsoleInteractor interactor = InstanceResolver.getConsoleInteractor();
+    private final ConsoleInputResolver inputResolver = InstanceResolver.getConsoleInputResolver(this);
 
-    DrinksSourceModel sourceModel = InstanceResolver.getDrinksSourceModel();
+    private final DrinksSourceModel sourceModel = InstanceResolver.getDrinksSourceModel();
 
     private List<CoffeeDrink> drinks = Collections.emptyList();
 

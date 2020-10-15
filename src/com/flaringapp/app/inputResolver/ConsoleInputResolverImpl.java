@@ -23,8 +23,8 @@ public class ConsoleInputResolverImpl implements ConsoleInputResolver {
     private static final List<String> SORT_OPTIONS = Arrays.asList("1", "2", "3");
     private static final List<String> FILTER_OPTIONS = Arrays.asList("4", "5");
 
-    DrinkSortManager sortManager = InstanceResolver.getDrinkSortManager();
-    DrinkFilterManager filterManager = InstanceResolver.getDrinkFilterManager();
+    private final DrinkSortManager sortManager = InstanceResolver.getDrinkSortManager();
+    private final DrinkFilterManager filterManager = InstanceResolver.getDrinkFilterManager();
 
     private final ConsoleInputConsumer consumer;
 
