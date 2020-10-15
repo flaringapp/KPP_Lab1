@@ -1,5 +1,7 @@
 package com.flaringapp.data.models;
 
+import com.flaringapp.data.formatters.CoffeeRoastFormatter;
+import com.flaringapp.data.formatters.CoffeeStateFormatter;
 import com.flaringapp.data.models.coffee.info.CoffeeInfo;
 
 public class CoffeeDrink {
@@ -32,4 +34,21 @@ public class CoffeeDrink {
         return coffeeVolume;
     }
 
+    @Override
+    public String toString() {
+        return name +
+                " | " +
+                coffeeVolume +
+                "ml" +
+                " | " +
+                CoffeeStateFormatter.formatCoffeeState(coffeeState) +
+                " | " +
+                coffeeInfo.getSort().getRating() +
+                " rating (" +
+                coffeeInfo.getSort().getName() +
+                ")" +
+                " | " +
+                "Roast: " +
+                CoffeeRoastFormatter.formatCoffeeRoastDegree(coffeeInfo.getRoastDegree());
+    }
 }
