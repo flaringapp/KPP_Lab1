@@ -1,4 +1,4 @@
-package com.flaringapp.data.models.coffee.sort;
+package com.flaringapp.data.models.coffee.info;
 
 public class CoffeeSort {
 

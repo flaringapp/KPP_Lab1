@@ -4,10 +4,9 @@ import com.flaringapp.data.models.CoffeeDrink;
 import com.flaringapp.data.models.CoffeeState;
 import com.flaringapp.data.models.coffee.info.CoffeeInfo;
 import com.flaringapp.data.models.coffee.info.CoffeeRoastDegree;
-import com.flaringapp.data.models.coffee.sort.CoffeeSort;
+import com.flaringapp.data.models.coffee.info.CoffeeSort;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class DrinksSourceModelImpl implements DrinksSourceModel {
